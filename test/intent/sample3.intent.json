@@ -1,0 +1,7 @@
+{
+"utterance":"What is your life story",
+"intent_type":"LifeStoryEventIntent",
+"intent":{
+"LifeStoryEventKeyword":"What is your life story"
+}
+}
