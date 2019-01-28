@@ -53,6 +53,11 @@ class DemoSkill(MycroftSkill):
         you_human_event_intent = IntentBuilder("YouHumanEventIntent"). \
             require("YouHumanEventKeyword").build()
         self.register_intent(you_human_event_intent, self.handle_you_human_event_intent)
+        
+        you_bot_event_intent = IntentBuilder("YouBotEventIntent"). \
+            require("YouBotEventKeyword").build()
+        self.register_intent(you_bot_event_intent, self.handle_you_bot_event_intent)
+
 
 
 
@@ -71,7 +76,10 @@ class DemoSkill(MycroftSkill):
 
 
     def handle_you_human_event_intent(self, message):
-        self.speak_dialog("I would prefer to think of myself as your friend,Who also happens to be artificially intelligent.")
+        self.speak_dialog(" Well , can't say that but are you sure that you are human too?")
+    
+    def handle_you_bot_event_intent(self, message):
+        self.speak_dialog("I would prefer to think of myself as your friend , Who also happens to be artificially intelligent.")
 
     def stop(self):
         pass
