@@ -49,6 +49,10 @@ class DemoSkill(MycroftSkill):
         met_das_event_intent = IntentBuilder("MetDasEventIntent"). \
             require("MetDasEventKeyword").build()
         self.register_intent(met_das_event_intent, self.handle_met_das_event_intent)
+        
+        you_human_event_intent = IntentBuilder("YouHumanEventIntent"). \
+            require("YouHumanEventKeyword").build()
+        self.register_intent(you_human_event_intent, self.handle_you_human_event_intent)
 
 
 
@@ -66,6 +70,8 @@ class DemoSkill(MycroftSkill):
         self.speak_dialog("Have you met God?, Same goes for me!!")
 
 
+    def handle_you_human_event_intent(self, message):
+        self.speak_dialog("I would prefer to think of myself as your friend. Who also happens to be artificially intelligent.")
 
     def stop(self):
         pass
