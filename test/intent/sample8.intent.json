@@ -1,0 +1,6 @@
+{
+"utterance":"When is your birthday",
+"intent_type":"YourBirthEventIntent",
+"intent":{
+"YourBirthEventKeyword":"When is your birthday"
+}
