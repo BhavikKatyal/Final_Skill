@@ -58,20 +58,20 @@ class DemoSkill(MycroftSkill):
 
     def handle_intro_event_intent(self, message):
 
-        self.speak_dialog("Did I forget to introduce myself? I’m your voice Assistant. Maverick!!")
+        self.speak_dialog("Did I forget to introduce myself? I’m your voice Assistant,Maverick!!")
 
     def handle_company_event_intent(self, message):
         self.speak_dialog("#tag Never Settle")
     
     def handle_life_story_event_intent(self, message):
-        self.speak_dialog("I m just a few days old to be honest. Somehow landed in between you humans!!")
+        self.speak_dialog("I m just a few days old to be honest,Somehow landed in between you humans!!")
     
     def handle_met_das_event_intent(self, message):
         self.speak_dialog("Have you met God?, Same goes for me!!")
 
 
     def handle_you_human_event_intent(self, message):
-        self.speak_dialog("I would prefer to think of myself as your friend. Who also happens to be artificially intelligent.")
+        self.speak_dialog("I would prefer to think of myself as your friend,Who also happens to be artificially intelligent.")
 
     def stop(self):
         pass
