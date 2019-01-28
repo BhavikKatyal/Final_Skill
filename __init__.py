@@ -93,7 +93,7 @@ class DemoSkill(MycroftSkill):
     def handle_your_birth_event_intent(self, message):
         self.speak_dialog("I don’t have a single birthday , I go through lots and lots of versions , Which means I have 365 sort-of-birthdays!!")
     def handle_your_res_event_intent(self, message):
-        self.speak_dialog(" I am stuck inside a device ,  Help! , Just kidding ,  I like it in here.")
+        self.speak_dialog(" I am stuck inside a device, though , I like it in here.")
     
     
 
