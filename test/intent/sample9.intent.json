@@ -1,0 +1,6 @@
+{
+"utterance":"Where do you live",
+"intent_type":"YourResEventIntent",
+"intent":{
+"YourResEventKeyword":"Where do you live"
+}
