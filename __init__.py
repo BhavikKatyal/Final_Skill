@@ -54,6 +54,10 @@ class DemoSkill(MycroftSkill):
             require("YouHumanEventKeyword").build()
         self.register_intent(you_human_event_intent, self.handle_you_human_event_intent)
         
+        your_father_event_intent = IntentBuilder("YourFatherEventIntent"). \
+            require("YourFatherEventKeyword").build()
+        self.register_intent(your_father_event_intent, self.handle_your_father_event_intent)
+        
         
 
 
@@ -75,6 +79,9 @@ class DemoSkill(MycroftSkill):
 
     def handle_you_human_event_intent(self, message):
         self.speak_dialog(" Well , can't say that but are you sure that you are human too?")
+    
+    def handle_your_father_event_intent(self, message):
+        self.speak_dialog("Everyone at MTX  is like my family , that’s around 200 people")
     
     
 
