@@ -1,0 +1,7 @@
+{
+"utterance":"What is your name",
+"intent_type":"InroEventIntent",
+"intent":{
+"IntroEventKeyword":"What is your name"
+}
+}
