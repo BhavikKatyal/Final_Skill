@@ -1,0 +1,7 @@
+{
+"utterance":"Are you a human",
+"intent_type":"YouHumanEventIntent",
+"intent":{
+"YouHumanEventKeyword":"Are you a human"
+}
+}
