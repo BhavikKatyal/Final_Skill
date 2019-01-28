@@ -1,0 +1,7 @@
+{
+"utterance":"Are you a bot",
+"intent_type":"YouBotEventIntent",
+"intent":{
+"YouBotEventKeyword":"Are you a bot"
+}
+}
