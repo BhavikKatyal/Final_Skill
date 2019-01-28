@@ -62,6 +62,10 @@ class DemoSkill(MycroftSkill):
             require("YourBirthEventKeyword").build()
         self.register_intent(your_birth_event_intent, self.handle_your_birth_event_intent)
         
+        your_res_event_intent = IntentBuilder("YourResEventIntent"). \
+            require("YourResEventKeyword").build()
+        self.register_intent(your_res_event_intent, self.handle_your_res_event_intent)
+        
         
 
 
@@ -88,6 +92,8 @@ class DemoSkill(MycroftSkill):
         self.speak_dialog("Everyone at MTX  is like my family , that’s around 200 people")
     def handle_your_birth_event_intent(self, message):
         self.speak_dialog("I don’t have a single birthday , I go through lots and lots of versions , Which means I have 365 sort-of-birthdays!!")
+    def handle_your_res_event_intent(self, message):
+        self.speak_dialog(" I am stuck inside a device!!!! Help!!!! , Just kidding ,  I like it in here.")
     
     
 
