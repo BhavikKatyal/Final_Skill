@@ -1,0 +1,6 @@
+{
+"utterance":"Who is your father",
+"intent_type":"YourFatherEventIntent",
+"intent":{
+"YourFatherEventKeyword":"Who is your father"
+}
