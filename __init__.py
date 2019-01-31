@@ -76,7 +76,7 @@ class DemoSkill(MycroftSkill):
         
         tell_story_event_intent=IntentBuilder("TellStoryEventIntent"). \
             require("TellStoryEventKeyword").build()
-        self.register_intent(my_tell_story_event_intent, self.handle_tell_story_event_intent)
+        self.register_intent(tell_story_event_intent, self.handle_tell_story_event_intent)
         
         bot_event_intent=IntentBuilder("BotEventIntent"). \
             require("BotEventKeyword").build()
