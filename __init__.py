@@ -66,9 +66,23 @@ class DemoSkill(MycroftSkill):
             require("YourResEventKeyword").build()
         self.register_intent(your_res_event_intent, self.handle_your_res_event_intent)
         
+        take_world_event_intent=IntentBuilder("TakeWorldEventIntent"). \
+            require("TakeWorldEventKeyword").build()
+        self.register_intent(take_world_event_intent, self.handle_take_world_event_intent)
         
+        my_keys_event_intent=IntentBuilder("MyKeysEventIntent"). \
+            require("MyKeysEventKeyword").build()
+        self.register_intent(my_keys_event_intent, self.handle_my_keys_event_intent)
+        
+        tell_story_event_intent=IntentBuilder("TellStoryEventIntent"). \
+            require("TellStoryEventKeyword").build()
+        self.register_intent(my_tell_story_event_intent, self.handle_tell_story_event_intent)
+        
+        bot_event_intent=IntentBuilder("BotEventIntent"). \
+            require("BotEventKeyword").build()
+        self.register_intent(bot_event_intent, self.handle_bot_event_intent)
 
-
+        
 
 
     def handle_intro_event_intent(self, message):
@@ -89,12 +103,23 @@ class DemoSkill(MycroftSkill):
         self.speak_dialog(" Well , can't say that but are you sure that you are human too?")
     
     def handle_your_father_event_intent(self, message):
-        self.speak_dialog("Everyone at MTX  is like my family , that’s around 200 people")
+        self.speak_dialog("Everyone at MTX  is like my family , that’s around 200 people , Our bond is hard-coded")
     def handle_your_birth_event_intent(self, message):
         self.speak_dialog("I don’t have a single birthday , I go through lots and lots of versions , Which means I have 365 sort-of-birthdays!!")
     def handle_your_res_event_intent(self, message):
         self.speak_dialog(" I am stuck inside a device, though , I like it in here.")
     
+    def handle_take_world_event_intent(self, message):
+        self.speak_dialog("Yes, wink wink!")
+    
+    def handle_my_keys_event_intent(self, message):
+        self.speak_dialog("In your drawer or maybe got stuck in a black hole, sorry about that.")
+    
+    def handle_tell_story_event_intent(self, message):
+        self.speak_dialog("Once upon a time, not so long ago, a dutiful assistant was doing all it could to be helpful. It was best at non-fictional story-telling.")
+    
+    def handle_bot_event_intent(self, message):
+        self.speak_dialog("I’d prefer to think of myself as your friend. Who also happens to be artificially intelligent")
     
 
     def stop(self):
