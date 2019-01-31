@@ -1,0 +1,6 @@
+{
+"utterance":"are you planning to take over",
+"intent_type":"TakeWorldEventIntent",
+"intent":{
+"TakeWorldEventKeyword":"are you planning to take over"
+}

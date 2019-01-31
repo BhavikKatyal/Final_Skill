@@ -1,0 +1,6 @@
+{
+"utterance":"You seem like an alien",
+"intent_type":"BotEventIntent",
+"intent":{
+"BotEventKeyword":"You seem like an alien"
+}

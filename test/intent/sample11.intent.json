@@ -1,0 +1,6 @@
+{
+"utterance":"where are my keys",
+"intent_type":"MyKeysEventIntent",
+"intent":{
+"MyKeysEventKeyword":"where are my keys"
+}
