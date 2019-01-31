@@ -1,6 +1,6 @@
 {
-"utterance":"tell me a story",
+"utterance":"Come up with a story",
 "intent_type":"TellStoryEventIntent",
 "intent":{
-"TellStoryEventKeyword":"tell me a story"
+"TellStoryEventKeyword":"Come up with a story"
 }
