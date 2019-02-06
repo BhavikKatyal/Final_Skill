@@ -125,7 +125,7 @@ class DemoSkill(MycroftSkill):
     def handle_bot_event_intent(self, message):
         self.speak_dialog("I’d prefer to think of myself as your friend. Who also happens to be artificially intelligent")
     
-    def handle_intro_event_intent(self, message):
+    def handle_mark_presence_intent(self, message):
 
         self.speak_dialog("Yes, I am Here!")
 
