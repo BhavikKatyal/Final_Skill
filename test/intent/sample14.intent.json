@@ -1,0 +1,6 @@
+{
+"utterance":"are you listening",
+"intent_type":"MarkPresenceIntent",
+"intent":{
+"MarkPresenceKeyword":"are you listening"
+}
