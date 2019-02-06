@@ -81,6 +81,10 @@ class DemoSkill(MycroftSkill):
         bot_event_intent=IntentBuilder("BotEventIntent"). \
             require("BotEventKeyword").build()
         self.register_intent(bot_event_intent, self.handle_bot_event_intent)
+        
+        mark_presence_intent=IntentBuilder("MarkPresenceIntent"). \
+            require("MarkPresenceKeyword").build()
+        self.register_intent(mark_presence_intent, self.handle_mark_presence_intent)
 
         
 
@@ -121,6 +125,9 @@ class DemoSkill(MycroftSkill):
     def handle_bot_event_intent(self, message):
         self.speak_dialog("I’d prefer to think of myself as your friend. Who also happens to be artificially intelligent")
     
+    def handle_intro_event_intent(self, message):
+
+        self.speak_dialog("Yes, I am Here!")
 
     def stop(self):
         pass
