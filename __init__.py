@@ -91,7 +91,7 @@ class DemoSkill(MycroftSkill):
 
     def handle_intro_event_intent(self, message):
 
-        self.speak_dialog("Did I forget to introduce myself? I’m your voice Assistant,Maverick!!")
+        self.speak_dialog("Did I forget to introduce myself? , I’m your voice Assistant,Maverick!!")
 
     def handle_company_event_intent(self, message):
         self.speak_dialog("#tag Never Settle")
