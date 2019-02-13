@@ -93,7 +93,7 @@ class DemoSkill(MycroftSkill):
             require("LifeIntentKeyword").build()
         self.register_intent(life_intent,self.handle_life_intent)
         siri_intent=IntentBuilder("SiriIntent"). \
-            require("SiriIntentKeyword"). \
+            require("SiriIntentKeyword").build()
         self.register_intent(siri_intent, self.handle_siri_intent)
 
         
