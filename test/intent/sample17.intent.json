@@ -1,0 +1,7 @@
+{
+"utterance":"What do you think about Siri",
+"intent_type":"SiriIntent",
+"intent":{
+"SiriIntentKeyword":"What do you think about Siri"
+}
+}
