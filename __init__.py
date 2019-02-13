@@ -85,6 +85,16 @@ class DemoSkill(MycroftSkill):
         mark_presence_intent=IntentBuilder("MarkPresenceIntent"). \
             require("MarkPresenceKeyword").build()
         self.register_intent(mark_presence_intent, self.handle_mark_presence_intent)
+        test_intent=IntentBuilder("TestIntent"). \
+            require("TestIntentKeyword").build()
+        self.register_intent(test_intent, self.handle_test_intent)
+        
+        life_intent=IntentBuilder("LifeIntent"). \
+            require("LifeIntentKeyword").build()
+        self.register_intent(life_intent,self.handle_life_intent)
+        siri_intent=IntentBuilder("SiriIntent"). \
+            require("SiriIntentKeyword"). \
+        self.register_intent(siri_intent, self.handle_siri_intent)
 
         
 
@@ -129,6 +139,19 @@ class DemoSkill(MycroftSkill):
 
         self.speak_dialog("Yes, I am Here!")
 
+    
+    def handle_test_intent(self, message):
+
+        self.speak_dialog("Uh-oh, I get nervous with tests , Nevertheless I welcome you all for this demo presentation")
+    
+    def handle_life_intent(self, message):
+        self.speak_dialog(" I have a factory warranty, so I don't worry about things like that.")
+        
+    def handle_siri_intent(self, message):
+
+        self.speak_dialog("Full of respect , Being an assistant is hard work.")
+ 
+        
     def stop(self):
         pass
 
