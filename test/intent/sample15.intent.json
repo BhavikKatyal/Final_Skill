@@ -1,7 +1,7 @@
 {
-"utterance":"What is life according to you",
+"utterance":"Your views about life",
 "intent_type":"LifeIntent",
 "intent":{
-"LifeIntentKeyword":"What is life according to you"
+"LifeIntentKeyword":"Your views about life"
 }
 }
