@@ -1,7 +1,7 @@
 {
-"utterance":"let's begin testing you",
+"utterance":"We are beginning to test you",
 "intent_type":"TestIntent",
 "intent":{
-"TestIntentKeyword":"let's begin testing you"
+"TestIntentKeyword":"We are beginning to test you"
 }
 }
