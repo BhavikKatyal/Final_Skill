@@ -142,7 +142,7 @@ class DemoSkill(MycroftSkill):
     
     def handle_test_intent(self, message):
 
-        self.speak_dialog("Uh-oh, I get nervous with tests , Nevertheless I welcome you all for this demo presentation")
+        self.speak_dialog("Uh-oh, I get nervous with tests , Never the less, I welcome you all for this demo presentation")
     
     def handle_life_intent(self, message):
         self.speak_dialog(" I have a factory warranty, so I don't worry about things like that.")
