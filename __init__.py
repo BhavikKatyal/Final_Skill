@@ -98,7 +98,6 @@ class DemoSkill(MycroftSkill):
 
         
 
-
     def handle_intro_event_intent(self, message):
 
         self.speak_dialog("Did I forget to introduce myself? , I’m your voice Assistant,Maverick!!")
@@ -151,6 +150,7 @@ class DemoSkill(MycroftSkill):
 
         self.speak_dialog("Full of respect , Being an assistant is hard work.")
  
+            
         
     def stop(self):
         pass
