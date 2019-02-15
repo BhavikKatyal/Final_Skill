@@ -1,0 +1,7 @@
+{
+"utterance":"I am facing heartburn",
+"intent_type":"MedIntent",
+"intent":{
+"MedIntentKeyword":"I am facing heartburn"
+}
+}
