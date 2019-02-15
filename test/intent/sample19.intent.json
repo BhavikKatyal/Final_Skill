@@ -1,7 +1,7 @@
 {
-"utterance":"I had pancakes at night",
+"utterance":"I ate pancakes at night",
 "intent_type":"HadIntent",
 "intent":{
-"HadIntentKeyword":"I had pancakes at night"
+"HadIntentKeyword":"I ate pancakes at night"
 }
 }
