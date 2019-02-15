@@ -95,6 +95,12 @@ class DemoSkill(MycroftSkill):
         siri_intent=IntentBuilder("SiriIntent"). \
             require("SiriIntentKeyword").build()
         self.register_intent(siri_intent, self.handle_siri_intent)
+        med_intent=IntentBuilder("MedIntent"). \
+            require("MedIntentKeyword").build()
+        self.register_intent(med_intent, self.handle_med_intent)
+        had_intent=IntentBuilder("HadIntent"). \
+            require("HadIntentKeyword").build()
+        self.register_intent(had_intent, self.handle_had_intent)
 
         
 
@@ -150,6 +156,13 @@ class DemoSkill(MycroftSkill):
 
         self.speak_dialog("Full of respect , Being an assistant is hard work.")
  
+    def handle_med_intent(self, message):
+
+        self.speak_dialog("What did you eat?")
+        
+    def handle_had_intent(self, message):
+
+        self.speak_dialog("It's just slow indigestion, don't you worry")
             
         
     def stop(self):
