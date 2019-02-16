@@ -1,5 +1,5 @@
 {
-"utterance":"I am having cough and facing slight body aches",
+"utterance":"I am having cough and slight body aches",
 "intent_type":"MedIntent",
 "intent":{
 "MedIntentKeyword":"I am having cough"
