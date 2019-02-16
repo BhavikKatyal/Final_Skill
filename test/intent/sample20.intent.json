@@ -1,6 +1,6 @@
 {
-"utterance":"It's 100.3 degree fahrenheit",
+"utterance":"It is 100.3 degree fahrenheit",
 "intent_type":"TempIntent",
 "intent":{
-"TempEventKeyword":"It's 100.3 degree fahrenheit"
+"TempEventKeyword":"It is 100.3 degree fahrenheit"
 }
