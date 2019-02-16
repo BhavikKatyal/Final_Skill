@@ -101,6 +101,14 @@ class DemoSkill(MycroftSkill):
         had_intent=IntentBuilder("HadIntent"). \
             require("HadIntentKeyword").build()
         self.register_intent(had_intent, self.handle_had_intent)
+        
+        temp_intent=IntentBuilder("TempIntent"). \
+            require("TempIntentKeyword").build()
+        self.register_intent(temp_intent, self.handle_temp_intent)
+        
+        age_intent=IntentBuilder("AgeIntent"). \
+            require("AgeIntentKeyword").build()
+        self.register_intent(age_intent, self.handle_age_intent)
 
         
 
@@ -158,11 +166,19 @@ class DemoSkill(MycroftSkill):
  
     def handle_med_intent(self, message):
 
-        self.speak_dialog("What did you eat?")
+        self.speak_dialog("Alongside, are you having a runny nose with a sore throat?")
         
     def handle_had_intent(self, message):
 
-        self.speak_dialog("It's just slow indigestion, don't you worry")
+        self.speak_dialog("Check your temperature please, and report.")
+        
+    def handle_temp_intent(self, message):
+
+        self.speak_dialog("Your age?")
+        
+    def handle_age_intent(self, message):
+
+        self.speak_dialog("Don't you worry, it's common cold. , Remember to wash your hands, disinfect your stuff snd use tissues.")
             
         
     def stop(self):
