@@ -1,0 +1,6 @@
+{
+"utterance":"I am 23",
+"intent_type":"AgeIntent",
+"intent":{
+"AgeIntentKeyword":"I am 23"
+}
