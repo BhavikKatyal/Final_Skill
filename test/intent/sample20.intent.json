@@ -1,6 +1,6 @@
 {
-"utterance":"Around 100",
+"utterance":"100 to be exact ",
 "intent_type":"TempIntent",
 "intent":{
-"TempEventKeyword":"Around 100"
+"TempEventKeyword":"100 to be exact"
 }
