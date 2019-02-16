@@ -2,6 +2,6 @@
 "utterance":"I am having cough and facing slight body aches",
 "intent_type":"MedIntent",
 "intent":{
-"MedIntentKeyword":"I am having cough and facing slight body aches"
+"MedIntentKeyword":"I am having cough"
 }
 }
