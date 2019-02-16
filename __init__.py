@@ -170,7 +170,7 @@ class DemoSkill(MycroftSkill):
         
     def handle_had_intent(self, message):
 
-        self.speak_dialog("Check your temperature please, and report.")
+        self.speak_dialog("Check your temperature please, and report in degree fahrenheit.")
         
     def handle_temp_intent(self, message):
 
