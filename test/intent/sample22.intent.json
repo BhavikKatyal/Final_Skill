@@ -1,0 +1,7 @@
+{
+"utterance":"list my events",
+"intent_type":"CalEventIntent",
+"intent":{
+"CalEventKeyword":"list my events"
+}
+}
