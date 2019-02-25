@@ -110,6 +110,9 @@ class DemoSkill(MycroftSkill):
             require("AgeIntentKeyword").build()
         self.register_intent(age_intent, self.handle_age_intent)
 
+        cal_intent=IntentBuilder("CalIntent"). \
+            require("CalIntentKeyword").build()
+        self.register_intent(cal_intent, self.handle_cal_intent)
         
 
     def handle_intro_event_intent(self, message):
@@ -179,7 +182,9 @@ class DemoSkill(MycroftSkill):
     def handle_age_intent(self, message):
 
         self.speak_dialog("Don't you worry, it's common cold. , Remember to wash your hands, disinfect your stuff snd use tissues.")
-            
+    def handle_cal_intent(self, message):
+
+        self.speak_dialog("Hello")        
         
     def stop(self):
         pass
