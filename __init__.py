@@ -15,17 +15,10 @@
 # You should have received a copy of the GNU General Public License
 # along with Mycroft Core.  If not, see <http://www.gnu.org/licenses/>.
 
-from __future__ import print_function
 import requests
 from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
-import datetime
-import pickle
-import os.path
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
 
 __author__ = 'Bhavik_Katyal'
 
@@ -191,7 +184,7 @@ class DemoSkill(MycroftSkill):
 
         self.speak_dialog("Don't you worry, it's common cold. , Remember to wash your hands, disinfect your stuff snd use tissues.")
     def handle_cal_intent(self, message):
-        creds = None
+       ''' creds = None
         # The file token.pickle stores the user's access and refresh tokens, and is
         # created automatically when the authorization flow completes for the first
         # time.
@@ -225,9 +218,9 @@ class DemoSkill(MycroftSkill):
         for event in events:
             start = event['start'].get('dateTime', event['start'].get('date'))
             #print(start, event['summary'])
-        self.speak_dialog("{}, {}".format(start,event['summary']))
-                
-        
+              '''          
+        self.speak_dialog("How are you")
+
     def stop(self):
         pass
 
