@@ -225,7 +225,7 @@ class DemoSkill(MycroftSkill):
         for event in events:
             start = event['start'].get('dateTime', event['start'].get('date'))
             #print(start, event['summary'])
-        self.speak_dialog("{}, {}".format(start,event['summary'))
+        self.speak_dialog("{}, {}".format(start,event['summary']))
                 
         
     def stop(self):
